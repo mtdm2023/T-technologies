@@ -1,0 +1,221 @@
+
+
+@font-face {
+  font-family: "Neo Sans Arabic Medium";
+  src: url("https://db.onlinewebfonts.com/t/7668f634eb4865a48f04d52ea3fb9b27.eot");
+  src: url("https://db.onlinewebfonts.com/t/7668f634eb4865a48f04d52ea3fb9b27.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/7668f634eb4865a48f04d52ea3fb9b27.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/7668f634eb4865a48f04d52ea3fb9b27.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/7668f634eb4865a48f04d52ea3fb9b27.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/7668f634eb4865a48f04d52ea3fb9b27.svg#Neo Sans Arabic Medium")format("svg");
+}
+
+.search{
+  position: absolute;
+  top: 76px;
+  right: 150px;}
+.p-inputtext {
+  text-align: right;
+  font-size: small;
+}
+.searchButton{
+  position: absolute;
+  top: 0px;
+  right: 324px;
+  cursor: pointer;
+}
+.tableNav {
+  position: relative;
+  top: 114px;
+  right: 149px;
+  background: white;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border: 0.75px #D8DCE4 solid;
+  width: 247px;
+  height: 41px;
+}
+.productnav{
+  border: 2px solid white;
+  position: relative;
+  left: 56px;
+  top: 12px;
+  font-size: 12px;
+  font-family: Almarai;
+  font-weight: 400;
+  word-wrap: break-word
+}
+.servicenav{
+  position: relative;
+  right: 56px;
+  top: 12px;
+  font-size: 12px;
+  font-family: Almarai;
+  font-weight: 400;
+  word-wrap: break-word
+}
+.freeHeader{
+  position: absolute;
+  right: -1px;
+  top: -6px;
+  width: 100%;
+  height: 36px;
+  background-color: #F8F8F9;
+  border-radius: 4.25px;
+  border: 0.50px rgba(112, 144, 176, 0.40) solid
+}
+.webIcon{
+  position: absolute;
+  top: 3px;
+  left: 8px;
+  z-index: 1;
+}
+  .headerr{
+
+    width: 1053px !important;
+    height: 36px !important;
+    border-radius: 2.25px !important;
+
+
+    position: relative;
+    top: -7px;
+
+  }
+ .p-datatable {
+  position: absolute;
+  right: 149px;
+  top: 147px;
+  padding-top: 20px;
+  padding-bottom: 12px;
+  padding-left: 9px;
+  padding-right: 9px;
+  border-radius: 83px !important;
+
+
+}
+/* .p-datatable-table {
+
+  border-spacing: 0px;
+
+  width: 100%;
+
+
+} */
+.p-datatablecontainer {
+  position: absolute !important;
+  right: 149px;
+  top: 155px;
+  border-spacing: 0px;
+   width: 1072px;
+
+}
+.table_headers{
+  color: #ABAAB1;
+  font-size: 11.28px;
+  font-family: Neo Sans Arabic Medium;
+  font-weight: 400;
+  line-height: 4px;
+  word-wrap: break-word;
+  text-align: center;
+}
+.tableData{
+  display: flex;
+  justify-content: center;
+  color: #1C1C28;
+  font-size: 13.28px;
+  font-family: Neo Sans Arabic Medium;
+  font-weight: 400;
+  line-height: 23.24px;
+  word-wrap: break-word;
+
+
+}
+
+.ticketsTabletitle{
+
+  color: #1C1C28;
+  font-size: 16px;
+  font-family: Neo Sans Arabic Medium;
+  font-weight: 400;
+  word-wrap: break-word;
+  margin-left: 17px;
+
+
+}
+
+
+
+
+
+ .p-element .p-datatable-tbody{
+  border: 0.75px solid #EBF0ED;
+}
+
+
+/* ::ng-deep .p-datatable
+{
+  width: 1069px !important;
+  padding: 9px !important;
+  background-color: #FFFFFF !important;
+
+} */
+
+
+  .p-datatable .p-datatable-tbody > tr > td {
+    text-align: left;
+    border: 1px solid #e5e7eb;
+    border-width: 0 0 1px 0;
+    padding-right: 0px;
+    margin-right: 5px !important;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px !important;
+    height: 44px !important;
+    overflow: visible;
+}
+ .p-datatable thead > tr > th {
+  background-color:transparent;
+
+}
+.p-datatable>.p-datatable-wrapper {
+
+  overflow: auto;
+  width: 1053px;
+}
+  /* overflow: auto;
+ */
+/* .table_headers{
+  position: relative;
+  right: -113px !important;
+
+} */
+ .tableData{
+
+  font-size: 12px;
+  text-align: center;
+ }
+
+ .nav-item {
+  margin-left: 29px;
+  padding-top: 5px;
+  border-bottom: 3px solid #EBEFF1 ; /* Set the border color */
+  border-radius: 2px;
+
+   /* Set the height */
+}
+
+.nav-item:active, .nav-item:hover {
+
+  border-bottom: 3px solid #2e31ce;
+  z-index: 1; /* Set the border color */
+}
+
+.navtable:hover{
+  background: #2e31ce !important;
+  color: white;
+  z-index: 1;
+}
+.navbar-nav{
+  height: 47px;
+  flex-direction: row !important;
+}

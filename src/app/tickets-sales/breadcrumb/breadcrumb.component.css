@@ -1,0 +1,9 @@
+:host ::ng-deep .p-breadcrumb {
+  position: relative;
+  right: 82px;
+  width: 100%;
+  direction: rtl;
+}
+:host ::ng-deep .p-breadcrumb .p-breadcrumb-list li.p-menuitem-separator {
+  transform: rotate(180deg) !important;
+}

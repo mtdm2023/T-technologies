@@ -1,0 +1,21 @@
+.inventoryAnalysis{
+  /* position:absolute; */
+  top: 213px;
+  right: 149px;
+  width:258px ;
+  height:82px ;
+  background: white;
+  border-radius: 9px;
+  border: 0.75px rgba(161, 165, 183, 0.50) solid
+}
+
+.knabPosition{
+  position: relative;
+  top: 6px;
+  left: 25px;
+}
+.predicted_profits
+{
+  position: relative;
+  top: -73px;
+}

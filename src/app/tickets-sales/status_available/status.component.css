@@ -1,0 +1,8 @@
+.statusStyle{
+  background: rgba(39, 208 , 140, 0.10);
+  width: 71px;
+  height: 28px;
+  border-radius: 6px;
+  position: relative;
+    right: -17px;
+}

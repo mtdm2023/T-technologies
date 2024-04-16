@@ -1,0 +1,195 @@
+
+<div class="d-block">
+  <div class="search">
+    <span class="p-input-icon-right">
+      <i class="pi pi-search"></i>
+    <input style="height:30px; width: 316px; " type="text" placeholder="...بحث عن " pInputText [(ngModel)]="searchValue" /></span>
+    <div class="searchButton">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+      <rect width="30" height="30" rx="7.5" transform="matrix(-1 0 0 1 30 0)" fill="white"/>
+      <rect x="-0.375" y="0.375" width="29.25" height="29.25" rx="7.125" transform="matrix(-1 0 0 1 29.25 0)" stroke="#92A1AD" stroke-opacity="0.4" stroke-width="0.75"/>
+      <path d="M14.8375 21.9062C14.5375 21.9062 14.2438 21.8313 13.9688 21.6813C13.4188 21.375 13.0875 20.8187 13.0875 20.1937V16.8812C13.0875 16.5687 12.8812 16.1 12.6875 15.8625L10.35 13.3875C9.95625 12.9938 9.65625 12.3188 9.65625 11.8125V10.375C9.65625 9.375 10.4125 8.59375 11.375 8.59375H19.625C20.575 8.59375 21.3438 9.3625 21.3438 10.3125V11.6875C21.3438 12.3438 20.95 13.0875 20.5812 13.4563L17.875 15.85C17.6125 16.0687 17.4062 16.55 17.4062 16.9375V19.625C17.4062 20.1812 17.0562 20.825 16.6187 21.0875L15.7563 21.6437C15.475 21.8187 15.1562 21.9062 14.8375 21.9062ZM11.375 9.53125C10.9375 9.53125 10.5938 9.9 10.5938 10.375V11.8125C10.5938 12.0438 10.7812 12.4937 11.0187 12.7312L13.4 15.2375C13.7188 15.6312 14.0312 16.2875 14.0312 16.875V20.1875C14.0312 20.5937 14.3125 20.7937 14.4313 20.8562C14.6937 21 15.0125 21 15.2562 20.85L16.125 20.2937C16.3 20.1875 16.475 19.85 16.475 19.625V16.9375C16.475 16.2687 16.8 15.5312 17.2688 15.1375L19.9438 12.7687C20.1563 12.5562 20.4125 12.05 20.4125 11.6813V10.3125C20.4125 9.88125 20.0625 9.53125 19.6313 9.53125H11.375Z" fill="#83899F"/>
+      <path d="M11.7483 14.4687C11.6608 14.4687 11.5796 14.4437 11.4983 14.4C11.2796 14.2625 11.2108 13.9687 11.3483 13.75L14.4296 8.81248C14.5671 8.59373 14.8546 8.52498 15.0733 8.66248C15.2921 8.79998 15.3608 9.08748 15.2233 9.30623L12.1421 14.2437C12.0546 14.3875 11.9046 14.4687 11.7483 14.4687Z" fill="#83899F"/>
+      </svg></div>
+  </div>
+
+
+  <div class="d-flex justify-content-between  tableNav">
+    <nav class="navbar navbar-expand navbar-light bg-transparent">
+      <div >
+
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span> -->
+        <!-- </button> -->
+        <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">الخدمات </a>
+                <div class="navtable" style="width: 20px; height: 16px; border-radius: 4px;background: #FAFAFA;position: relative;  text-align: center; font-size: 12px;  top: -28px;right: 19px;border-radius: 4px; border: 0.50px #EDF2EF solid"> 70</div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="#" tabindex="-1" >المنتجات </a>
+                <div class="navtable" style="width: 24px; height: 16px; border-radius: 4px;background: #FAFAFA;position: relative;  text-align: center; font-size: 12px;  top: -28px;right: 23px;border-radius: 4px; border: 0.50px #EDF2EF solid"> 120</div>
+            </li>
+          </ul>
+
+        </div>
+      <!-- </div> -->
+    </nav>
+
+
+  </div>
+
+
+
+  <div style="background-color: white; height: 416px; " class="p-datatablecontainer">
+
+  </div>
+
+    <p-table ngClass="custom-table"
+    [value]="productArr"
+    [scrollable]="true"
+    [rows]="8"
+    [resizableColumns]="true"
+
+
+
+    >
+  <ng-template  pTemplate="header"  >
+    <div class="freeHeader">
+      <div class="webIcon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+          <rect width="26" height="26" rx="6" fill="#DFE2EA" fill-opacity="0.3"/>
+          <rect x="0.25" y="0.25" width="25.5" height="25.5" rx="5.75" stroke="#99A1B7" stroke-opacity="0.6" stroke-width="0.5"/>
+          <path d="M11.8337 19.2708H11.2503C8.08283 19.2708 6.72949 17.9175 6.72949 14.75V11.25C6.72949 8.08249 8.08283 6.72916 11.2503 6.72916H14.7503C17.9178 6.72916 19.2712 8.08249 19.2712 11.25V12.4167C19.2712 12.6558 19.0728 12.8542 18.8337 12.8542C18.5945 12.8542 18.3962 12.6558 18.3962 12.4167V11.25C18.3962 8.56082 17.4395 7.60416 14.7503 7.60416H11.2503C8.56116 7.60416 7.60449 8.56082 7.60449 11.25V14.75C7.60449 17.4392 8.56116 18.3958 11.2503 18.3958H11.8337C12.0728 18.3958 12.2712 18.5942 12.2712 18.8333C12.2712 19.0725 12.0728 19.2708 11.8337 19.2708Z" fill="#99A1B7"/>
+          <path d="M18.8337 11.3958H7.18457C6.9454 11.3958 6.74707 11.1975 6.74707 10.9583C6.74707 10.7192 6.9454 10.5208 7.18457 10.5208H18.8337C19.0729 10.5208 19.2712 10.7192 19.2712 10.9583C19.2712 11.1975 19.0729 11.3958 18.8337 11.3958Z" fill="#99A1B7"/>
+          <path d="M13.0004 15.4792H7.18457C6.9454 15.4792 6.74707 15.2808 6.74707 15.0417C6.74707 14.8025 6.9454 14.6042 7.18457 14.6042H13.0004C13.2396 14.6042 13.4379 14.8025 13.4379 15.0417C13.4379 15.2808 13.2396 15.4792 13.0004 15.4792Z" fill="#99A1B7"/>
+          <path d="M10.9639 19.265C10.7247 19.265 10.5264 19.0667 10.5264 18.8275V7.17834C10.5264 6.93918 10.7247 6.74084 10.9639 6.74084C11.203 6.74084 11.4014 6.93918 11.4014 7.17834V18.8275C11.4014 19.0667 11.2089 19.265 10.9639 19.265Z" fill="#99A1B7"/>
+          <path d="M15.0469 13.4317C14.8077 13.4317 14.6094 13.2333 14.6094 12.9942V7.17834C14.6094 6.93918 14.8077 6.74084 15.0469 6.74084C15.286 6.74084 15.4844 6.93918 15.4844 7.17834V12.9942C15.4844 13.2333 15.2919 13.4317 15.0469 13.4317Z" fill="#99A1B7"/>
+          <path d="M14.61 19.2708C14.365 19.2708 14.1433 19.1833 13.98 19.0199C13.7816 18.8274 13.6941 18.5416 13.7408 18.2441L13.875 17.3166C13.9041 17.095 14.0383 16.8266 14.2016 16.6633L16.6225 14.2425C16.9375 13.9275 17.2467 13.7641 17.5733 13.7291C17.9758 13.6883 18.3783 13.8633 18.7575 14.2425C19.1366 14.6216 19.3116 15.0183 19.2708 15.4267C19.2416 15.7533 19.0725 16.0625 18.7575 16.3775L16.3366 18.7983C16.1791 18.9558 15.9108 19.09 15.6833 19.125L14.7616 19.2591C14.7091 19.265 14.6566 19.2708 14.61 19.2708ZM17.6783 14.6041C17.6725 14.6041 17.6608 14.6041 17.655 14.6041C17.5383 14.6158 17.3983 14.7033 17.235 14.8666L14.8141 17.2875C14.785 17.3166 14.7441 17.4041 14.7383 17.445L14.6041 18.3724L15.555 18.2675C15.5958 18.2616 15.6833 18.215 15.7125 18.1916L18.1333 15.7708C18.2966 15.6075 18.3841 15.4675 18.3958 15.3508C18.4075 15.2166 18.32 15.0591 18.1333 14.8724C17.9583 14.6916 17.8067 14.6041 17.6783 14.6041Z" fill="#99A1B7"/>
+          <path d="M18.0982 16.8558C18.0574 16.8558 18.0224 16.85 17.9815 16.8383C17.1065 16.5933 16.4065 15.8933 16.1615 15.0183C16.0974 14.785 16.2315 14.5459 16.4649 14.4817C16.704 14.4175 16.9374 14.5517 17.0015 14.785C17.1649 15.3684 17.6315 15.835 18.2149 15.9983C18.4482 16.0625 18.5824 16.3075 18.5182 16.535C18.4657 16.7334 18.2849 16.8558 18.0982 16.8558Z" fill="#99A1B7"/>
+          </svg>
+      </div>
+    </div>
+      <tr  ngClass="headerr">
+
+        <th class="table_headers"></th>
+        <th class="table_headers">معدل البيع</th>
+        <th class="table_headers">الخصم</th>
+        <th class="table_headers">الحد الأدنى</th>
+        <th class="table_headers">% الضريبة</th>
+        <th class="table_headers">التصنيف</th>
+        <th class="table_headers">حالة المنتج</th>
+        <th  class="table_headers">الكمية </th>
+        <th class="table_headers">سعر البييع</th>
+        <th class="table_headers">المنتجات</th>
+        <th  class="table_headers">#</th>
+
+      </tr>
+
+
+  </ng-template>
+  <ng-template pTemplate="body" let-ticket let-i="rowIndex" >
+      <tr >
+          <td>
+            <div  class="tableData">
+               <app-panel-manager></app-panel-manager>
+            </div>
+            </td>
+
+          <td>
+            <div  class="tableData">
+              <svg xmlns="http://www.w3.org/2000/svg" width="71" height="34" viewBox="0 0 71 34" fill="none">
+                <mask id="mask0_5_6183" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="71" height="34">
+                <rect width="70.5" height="33.25" fill="#D9D9D9"/>
+                </mask>
+                <g mask="url(#mask0_5_6183)">
+                <path d="M7.53906 17.2102C8.79549 18.1827 11.8882 19.69 14.2078 17.9395C17.1072 15.7515 18.9918 11.5838 19.8617 12.4174C20.7315 13.2509 22.0362 15.8557 24.9357 12.4174C27.8351 8.97902 28.705 5.33229 31.6044 6.16583C34.5038 6.99936 36.6784 24.5036 42.0424 20.8569C47.4063 17.2102 49.146 11.688 50.7407 12.4174C52.3354 13.1467 54.22 6.99936 56.3946 6.89517C58.5692 6.79098 61.6136 13.3551 62.3384 13.5635C63.0633 13.7718 64.658 11.2712 66.5426 12.4174C68.4272 13.5635 72.6314 20.4401 75.6758 19.1898C78.7202 17.9395 83.0694 12.7299 85.099 13.1467C87.1286 13.5635 89.5931 12.5215 90.318 11.167C91.0429 9.81255 93.0725 5.33229 97.1317 7.72871" stroke="#3ED598" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.2072 18.5441C11.8877 20.2945 8.79496 18.7872 7.53854 17.8147L0 45.8424L99.3057 48.9682C99.9339 36.222 100.379 10.2504 97.1312 8.33326C93.0719 5.93684 91.0423 10.4171 90.3175 11.7716C89.5926 13.1261 87.1281 14.168 85.0985 13.7512C83.0689 13.3345 78.7197 18.5441 75.6753 19.7944C72.6309 21.0447 68.4267 14.168 66.5421 13.0219C64.6575 11.8758 63.0628 14.3764 62.3379 14.168C61.613 13.9596 58.5686 7.39553 56.3941 7.49972C54.2195 7.60391 52.3349 13.7512 50.7402 13.0219C49.1455 12.2926 47.4058 17.8147 42.0418 21.4615C36.6779 25.1082 34.5033 7.60392 31.6039 6.77038C28.7044 5.93684 27.8346 9.58357 24.9352 13.0219C22.0357 16.4602 20.731 13.8554 19.8611 13.0219C18.9913 12.1884 17.1067 16.3561 14.2072 18.5441Z" fill="url(#paint0_linear_5_6183)"/>
+                </g>
+                <defs>
+                <linearGradient id="paint0_linear_5_6183" x1="50.0153" y1="2.5865" x2="50.0153" y2="40.5286" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#3ED598" stop-opacity="0.2"/>
+                <stop offset="0.72165" stop-color="#3ED598" stop-opacity="0"/>
+                </linearGradient>
+                </defs>
+                </svg>
+            </div>
+            </td>
+          <td>
+            <div  class="tableData">
+              {{productArr[i].discount}}
+
+            </div>
+            </td>
+          <td>
+            <div  class="tableData">
+               {{productArr[i].minlimit}}
+            </div>
+            </td>
+          <td>
+            <div  class="tableData">
+              {{'%'+productArr[i].taxe}}
+            </div>
+
+          </td>
+          <td>
+            <div >
+              <app-category></app-category>
+            </div>
+
+          </td >
+          <td>
+            <div style="overflow: hidden; text-overflow: ellipsis;" >
+             <app-status-available></app-status-available>
+            </div>
+
+          </td>
+          <td>
+            <div  class="tableData">
+              {{ productArr[i].quantity }}
+            </div>
+
+          </td>
+          <td>
+            <div class="tableData" >
+               {{productArr[i].pointOfsale}}
+            </div>
+
+          </td>
+          <td>
+            <div  class="tableData">
+              <app-usercard [imagesvg]="productArr[i].product.imagesvg" [productname]="productArr[i].product.name" [number]="productArr[i].product.number"></app-usercard>
+            </div>
+
+          </td>
+          <td>
+            <p style="color: #898995;
+            font-size: 13.28px;
+            font-family: Inter;
+            font-weight: 400;
+            line-height: 23.24px;
+            word-wrap: break-word ;    position: relative;top: 9px; right: -22px;"> {{i+1}}</p>
+
+          </td>
+
+
+
+      </tr>
+
+
+  </ng-template>
+  <!-- <ng-template pTemplate="footer">
+
+    <span style="right: 13px; bottom: 24px; align-self: center;" class="p-paginator-currentt "> عرض </span>
+
+
+  </ng-template> -->
+
+  </p-table >
+
+
+
+</div>
+

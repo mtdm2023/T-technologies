@@ -1,0 +1,44 @@
+.panelManager{
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.edit{
+  cursor: pointer;
+}
+
+.eye{
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+.menue{
+
+
+
+  position: relative;
+  overflow: visible;
+  margin-right: 9.43px;
+  cursor: pointer;
+}
+.menu:hover path {
+  fill: blue;
+
+
+}
+.menuItem{
+  width: 132px;
+  height: 32px;
+}
+
+.menuItem :hover{
+  background: linear-gradient(270deg, rgba(7, 113, 222, 0.10) 0%, rgba(7, 113, 222, 0.06) 100%);
+}
+
+.customclassTooltip
+{
+  width: 20px !important;
+  height: 20px !important;
+}
+

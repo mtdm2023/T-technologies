@@ -1,0 +1,9 @@
+.categoryStyle{
+  background-color: #F7F7F7;
+  width: 81px;
+  height: 26px;
+  border-radius: 13.125px;
+  border: 0.75px solid var(--strok, #E0E3E9);
+  position: relative;
+  right: -11px;
+}
